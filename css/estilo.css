@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/*---Body---*/
+.body-login, .body-registro{
+    background-image: url("../assets/fondo-login.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    width: 100%;
+    margin: 0;
+}
+
+/*---Main---*/
+.main-login, .main-registro{
+    flex: 1;
+    margin: 150px;
+    flex-direction: column;
+}
+
+/*---Formulario---*/
+.formulario {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    width: 310px;
+}
+
+.form-floating input{
+   border: none;
+   background: rgba(0, 0, 0, 0.4);
+   outline: none;
+   color: white;
+}
+
+.form-floating input:focus{
+   border: none;
+   background: rgba(0, 0, 0, 0.4);
+   outline: none;
+   color: white;
+}
+
+

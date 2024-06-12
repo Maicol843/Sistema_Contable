@@ -7,7 +7,7 @@ $dbname = "registro_contable";
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
+    die(json_encode(array("status" => "error", "message" => "Conexión fallida: " . $conn->connect_error)));
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -17,11 +17,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO users (username, password) VALUES ('$user', '$pass')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "Registro exitoso. <a href='../index.html'>Ir a Login</a>";
+        echo json_encode(array("status" => "success", "message" => "Se registro exitosamente"));
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo json_encode(array("status" => "error", "message" => "Error: " . $sql . "<br>" . $conn->error));
     }
 }
 
 $conn->close();
 ?>
+

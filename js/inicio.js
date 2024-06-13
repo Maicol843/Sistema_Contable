@@ -275,6 +275,7 @@ function reestablecerDatos(){
     document.getElementById('direccion-tabla').innerHTML = '';
     document.getElementById('remitente-tabla').innerHTML = '';
   });
+  localStorage.removeItem("formData");
 }
 
 function borrarUltimoRegistro() {

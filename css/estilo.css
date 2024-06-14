@@ -29,7 +29,7 @@ h6 {
     margin: 0;
 }
 
-.body-inicio, .body-ingresos, .body-egresos, .body-informes{
+.body-inicio, .body-ingresos, .body-egresos, .body-informes, .body-ldiario{
     width: 100%;
     height: 100vh;
 }

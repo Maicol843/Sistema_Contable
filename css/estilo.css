@@ -29,7 +29,8 @@ h6 {
     margin: 0;
 }
 
-.body-inicio, .body-ingresos, .body-egresos, .body-informes, .body-ldiario{
+.body-inicio, .body-ingresos, .body-egresos, 
+.body-informes, .body-ldiario, .body-lSumasSaldos{
     width: 100%;
     height: 100vh;
 }

@@ -30,7 +30,8 @@ h6 {
 }
 
 .body-inicio, .body-ingresos, .body-egresos, 
-.body-informes, .body-ldiario, .body-lSumasSaldos{
+.body-informes, .body-ldiario, .body-lSumasSaldos
+.body-prebalance, .body-balanceGeneral{
     width: 100%;
     height: 100vh;
 }
